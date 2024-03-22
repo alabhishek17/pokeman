@@ -6,7 +6,7 @@ let filterBtn=document.getElementById("btnfilter");
 
 let colors={
     normal:"#a4acaf",
-    poison:"#b97fc9;",
+    paiser:"#b97fc9;",
     ground:"#f7de3f",
     rock:"#a38c21",
     grass:"#9bcc50",
@@ -31,7 +31,7 @@ card.innerHTML=`
 <div class="card-inner">
 
 <div class="card-front"> 
-<div class="id">${details.id}</div> 
+<div class="id">"${details.id}"</div> 
 <img src="${details.sprites.front_default}"/>
 <div class="name">${details.name}</div>
 <div class="name-type">${details.types[0].type.name}</div>
@@ -40,8 +40,8 @@ card.innerHTML=`
 <div class="card-back">
 
 <img src="${details.sprites.back_default}"/>
-<div class="ability">${details.abilities[0].ability.name}</div>
 <div class"name">${details.name}</div>
+<div class="ability">${details.abilities[0].ability.name}</div>
 
 </div>
 </div>

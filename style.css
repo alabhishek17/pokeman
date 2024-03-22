@@ -89,6 +89,8 @@ header{
     width: 300px;
     height: 300px;
     perspective: 1000px;
+    padding: 10px;
+
   }
   
   .card-inner {
@@ -99,6 +101,7 @@ header{
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
   }
   
   .card:hover .card-inner{
@@ -111,15 +114,48 @@ header{
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    padding: 10px;
+    
   }
   
   .card-front {
-    background-color: #bbb;
+    /* background-color: #bbb; */
     color: black;
   }
   
   .card-back {
-    background-color: #2980b9;
+    /* background-color: #2980b9; */
     color: white;
     transform: rotateY(180deg);
   }
+  .card-inner img{
+    border: 2px solid;
+    margin: 20px;
+    border-radius: 50%;
+    
+  }
+  .card-inner, .name{
+    font-size: 1.5rem;
+    /* border: 2px solid; */
+  }
+  .card-inner,.name-type{
+    font-size: 1.0rem;
+    margin-top: 20px;
+    border: 2px solid;
+    background-color: white;
+    border-radius: 5px;
+   
+  }
+  .name-type{
+    width: 70px;
+    margin-left: 100px;
+    padding: 10px;
+  }
+.card-back .ability{
+    font-size: 1.5rem;
+    margin-top: 20px;
+
+}
+.card-front .id{
+    background-color: aliceblue;
+}
