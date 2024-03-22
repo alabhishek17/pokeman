@@ -5,10 +5,20 @@ let filterBtn=document.getElementById("btnfilter");
 
 
 let colors={
-    normal:"grey",
-    poison:"purple",
-    ground:"yellow",
-    rock:"brown"
+    normal:"#a4acaf",
+    poison:"#b97fc9;",
+    ground:"#f7de3f",
+    rock:"#a38c21",
+    grass:"#9bcc50",
+    bug:"#729f3f",
+    fire:"#fd7d24",
+    water:"#4592c4",
+    ice:"#51c4e7",
+    electric:"#eed535",
+    psychic:"#f366b9",
+    fairy:"#fdb9e9",
+    ghost:"#7b62a3",
+    fighting:"#d56723"
 }
 
 

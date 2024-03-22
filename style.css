@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin: 10px;
+}
+header{
+ 
+   text-align: center;
+   margin: 10px;
+   padding: 10px;
+
+}
+#type ,#btnfilter,#input ,#rest{
+    padding: 10px;
+    margin-left: 5px;
+}
+
+/* js styleing */
+
+#mainId{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    opacity: 0.95;
+}
+
+
+
+.card-inner{
+   display: flex;
+    flex-direction: row;
+     /* justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    flex-shrink: 0; */
+    margin: 20px;
+    width: 200px;
+    height: 275px;
+    text-align: center;
+    justify-content: center;
+    
+    
+
+}
+.card-front{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid black; */
+    /* text-align: center; */
+    position: absolute;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.card-back{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid rgb(210, 14, 14); */
+   position: absolute;
+   align-items: center;
+   -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card-inner:hover .card-front{
+    transform: rotate(180deg);
+}
+.card-front{
+    transform: rotate(0);
+}
+.card-back{
+    transform: rotateY(180deg);
+}
+.card-front{
+    z-index: 2;
+    transform: rotateY(0);
+}
