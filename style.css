@@ -17,6 +17,7 @@ header{
 #type ,#btnfilter,#input ,#rest{
     padding: 10px;
     margin-left: 5px;
+    border-radius: 5px;
 }
 
 /* js styleing */
@@ -83,14 +84,18 @@ header{
     flex-wrap: wrap;
     flex-grow: 0;
     flex-shrink: 0;
-}
+    /* background-image: url(https://www.pokemon.com/static-assets/content-assets/cms2/img/watch-pokemon-tv/seasons/season24/season24_ep04_ss03.png);
+   background-repeat: no-repeat;
+   background-position: center; */
+  }
+
 .card {
     background-color: transparent;
     width: 300px;
     height: 300px;
     perspective: 1000px;
     padding: 10px;
-
+     
   }
   
   .card-inner {
@@ -125,13 +130,14 @@ header{
   
   .card-back {
     /* background-color: #2980b9; */
-    color: white;
+    color: rgb(16, 16, 16);
     transform: rotateY(180deg);
   }
   .card-inner img{
-    border: 2px solid;
+    /* border: 2px solid; */
     margin: 20px;
     border-radius: 50%;
+    box-shadow: 10px 10px 10px;
     
   }
   .card-inner, .name{
